@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class NQueen {
     static int count = 0;
     public static void main(String[] args) {
-        int n = 5;
+        int n = 4;
         int[][] board = new int[n][n];
 
         nQueen(board, 0, n);
@@ -19,7 +19,7 @@ public class NQueen {
     }
 
     /**
-     * This function solves the N Queen problem. It checks for each columns by a single row
+     * This function solves the N Queen problem. It checks for each column by a single row
      * and it does so recursively by increasing the column number by 1.
      * <p>
      * It follows the following steps
@@ -37,8 +37,8 @@ public class NQueen {
     public static boolean nQueen(int[][] board, int col, int n) {
         // after placing all queens the column value = number of queens (Base Case)
         if (col == n) {
-//            printSolution(board);
-            count++;
+            printSolution(board);
+//            count++;
             return true;
         }
 

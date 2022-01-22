@@ -9,7 +9,7 @@ public class CombinationSum {
 
     public static void main(String[] args) {
         CombinationSum obj = new CombinationSum();
-        System.out.println(obj.combinationSum(new int[]{10,1,2,7,6,1,5}, 8));
+        System.out.println(obj.combinationSum(new int[]{10, 1, 2, 7, 6, 1, 5}, 8));
     }
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
